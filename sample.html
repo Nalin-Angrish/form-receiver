@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample form for backend testing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-4">
+  <form action="http://localhost:5000/form_submit" method="post" class="flex flex-col mx-auto w-full">
+    <input type="hidden" name="target_email" value="nalin@nalinangrish.me" />
+    <input type="text" name="name" placeholder="Name" class="border-b p-2 m-2" />
+    <input type="email" name="email" placeholder="Email" class="border-b p-2 m-2" />
+    <input type="submit" value="Submit" class="bg-blue-500 text-white rounded-lg p-4 hover:bg-blue-300 hover:pointer" />
+  </form>
+</body>
+</html>
